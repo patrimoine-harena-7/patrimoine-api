@@ -51,7 +51,13 @@
             <version>1.5.6</version>
         </dependency>
     </dependencies>
-
+    <distributionManagement>
+        <repository>
+            <id>patrimoine-harena-harena-mav</id>
+            <name>patrimoine-harena-harena-mav</name>
+            <url>https://patrimoine-harena-016161980486.d.codeartifact.eu-west-3.amazonaws.com/maven/harena-mav/</url>
+        </repository>
+    </distributionManagement>
     <build>
         <plugins>
             <plugin>
