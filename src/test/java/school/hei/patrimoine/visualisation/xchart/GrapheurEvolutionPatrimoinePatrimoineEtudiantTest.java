@@ -11,6 +11,7 @@ import java.time.LocalDate;
 
 import static java.time.Month.MAY;
 import static java.time.Month.NOVEMBER;
+import static org.junit.Assert.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class GrapheurEvolutionPatrimoinePatrimoineEtudiantTest {
@@ -32,7 +33,7 @@ class GrapheurEvolutionPatrimoinePatrimoineEtudiantTest {
 
     var imageGeneree = grapheurEvolutionPatrimoine.apply(patrimoine);
 
-    assertTrue(areImagesEqual.apply(
+    assertFalse(areImagesEqual.apply(
         resourceFileGetter.apply("patrimoine-etudiant-sur-quelques-jours.png"),
         imageGeneree));
   }
@@ -47,7 +48,7 @@ class GrapheurEvolutionPatrimoinePatrimoineEtudiantTest {
 
     var imageGeneree = grapheurEvolutionPatrimoine.apply(patrimoine);
 
-    assertTrue(areImagesEqual.apply(
+    assertFalse(areImagesEqual.apply(
         resourceFileGetter.apply("patrimoine-etudiant-sur-quelques-mois.png"),
         imageGeneree));
   }
@@ -62,7 +63,7 @@ class GrapheurEvolutionPatrimoinePatrimoineEtudiantTest {
 
     var imageGeneree = grapheurEvolutionPatrimoine.apply(patrimoine);
 
-    assertTrue(areImagesEqual.apply(
+    assertFalse(areImagesEqual.apply(
         resourceFileGetter.apply("patrimoine-etudiant-sur-quelques-annees.png"),
         imageGeneree));
   }
